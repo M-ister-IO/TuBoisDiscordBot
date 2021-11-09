@@ -5,7 +5,7 @@ const Client = new Discord.Client({
         "GUILDS","GUILD_MESSAGES"
     ]
 });
-var textArray = [
+var replies = [
     'Tu bois',
     'https://tenor.com/view/why-dont-you-go-get-me-a-drink-zoe-levin-tiffany-chester-bonding-i-dare-you-gif-16541342',
     'https://tenor.com/view/oss117-oss-le-caire-nid-despions-fran%C3%A7ois-damiens-drink-gif-16938746',
@@ -34,8 +34,10 @@ Client.on("ready", () => {
 Client.on("messageCreate",message => {
     for (let pas=0;pas<textArray2.length;pas++)
         if (message.content.includes(textArray2[pas])) {
-            message.reply(textArray[Math.floor(Math.random()*textArray.length)]);
+            message.reply(replies[Math.floor(Math.random()*replies.length)]);
             console.log("il boit");
     }
-
+    if (message.content == message.content.toUpperCase()) {
+           message.reply("Calmos Ramos");
+    }
 });
