@@ -13,7 +13,8 @@ var replies = [
     'https://tenor.com/view/beer-german-happy-hour-gif-4728652',
     'https://tenor.com/view/leonardo-dicaprio-drink-and-wink-wink-and-drink-cheers-gif-13397942',
     'https://tenor.com/view/liquor-oldman-gif-18480181',
-    'https://tenor.com/view/drinking-cheers-old-drunk-gif-4497075'
+    'https://tenor.com/view/drinking-cheers-old-drunk-gif-4497075',
+    'https://tenor.com/view/pingu-drink-drunk-gif-5479987'
 ];
 var textArray2=[
     "ducoup",
