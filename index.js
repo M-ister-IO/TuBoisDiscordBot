@@ -20,12 +20,12 @@ var textArray2=[
     "Du coup",
     "d u c o u p"
 ];
-
+Client.login(process.env.token);
 Client.on("ready", () => {
     console.log("bot operationnel");
 });
 
-Client.login(process.env.token);
+
 
 Client.on("messageCreate",message => {
     for (let pas=0;pas<textArray2.length;pas++)
