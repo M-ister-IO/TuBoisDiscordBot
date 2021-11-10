@@ -34,14 +34,18 @@ var textArray3=[
     "ptn",
     "putain",
     "PTN",
-    "PUTAIN"
+    "PUTAIN",
+    "fuck",
+    "FUCK",
+    "Fuck"
 ];
 
 var textArray4=[
     "?",
     "!",
     ":)",
-    "😂"
+    "😂",
+    "😭"
 ];
 
 Client.login(process.env.token);
