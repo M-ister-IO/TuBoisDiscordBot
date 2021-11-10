@@ -37,6 +37,13 @@ var textArray3=[
     "PUTAIN"
 ];
 
+var textArray3=[
+    "?",
+    "!",
+    ":)",
+    ":joy:"
+];
+
 Client.login(process.env.token);
 Client.on("ready", () => {
     console.log("bot operationnel");
@@ -50,7 +57,7 @@ Client.on("messageCreate",message => {
             message.reply(repliesDrinking[Math.floor(Math.random()*repliesDrinking.length)]);
             
     }
-    if (message.content == "?") {
+    if (textArray3.includes(message.content)) {
         return;
     }
     else if (message.content == message.content.toUpperCase()) {
