@@ -6,7 +6,6 @@ const Client = new Discord.Client({
     ]
 });
 var repliesDrinking = [
-    'Tu bois',
     'https://tenor.com/view/why-dont-you-go-get-me-a-drink-zoe-levin-tiffany-chester-bonding-i-dare-you-gif-16541342',
     'https://tenor.com/view/oss117-oss-le-caire-nid-despions-fran%C3%A7ois-damiens-drink-gif-16938746',
     'https://tenor.com/view/alcool-belgrade-ptit-sifflet-fanta-gif-16824147',
