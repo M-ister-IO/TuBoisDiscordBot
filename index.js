@@ -40,13 +40,6 @@ var textArray3=[
     "Fuck"
 ];
 
-var textArray4=[
-    "?",
-    "!",
-    ":)",
-    "😂",
-    "😭"
-];
 
 Client.login(process.env.token);
 Client.on("ready", () => {
@@ -61,12 +54,7 @@ Client.on("messageCreate",message => {
             message.reply(repliesDrinking[Math.floor(Math.random()*repliesDrinking.length)]);
             
     }
-    if (textArray4.includes(message.content)) {
-        return;
-    }
-    else if (message.content == message.content.toUpperCase()) {
-           message.reply("Calmos Ramos");
-    }
+
     for (let pas=0;pas<textArray3.length;pas++)
         if (message.content.includes(textArray3[pas])) {
             message.reply(repliesLanguage[Math.floor(Math.random()*repliesLanguage.length)]);
