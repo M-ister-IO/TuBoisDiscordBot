@@ -37,11 +37,11 @@ var textArray3=[
     "PUTAIN"
 ];
 
-var textArray3=[
+var textArray4=[
     "?",
     "!",
     ":)",
-    ":joy:"
+    "😂"
 ];
 
 Client.login(process.env.token);
@@ -57,7 +57,7 @@ Client.on("messageCreate",message => {
             message.reply(repliesDrinking[Math.floor(Math.random()*repliesDrinking.length)]);
             
     }
-    if (textArray3.includes(message.content)) {
+    if (textArray4.includes(message.content)) {
         return;
     }
     else if (message.content == message.content.toUpperCase()) {
