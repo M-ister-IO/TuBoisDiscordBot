@@ -50,7 +50,10 @@ Client.on("messageCreate",message => {
             message.reply(repliesDrinking[Math.floor(Math.random()*repliesDrinking.length)]);
             
     }
-    if (message.content == message.content.toUpperCase()) {
+    if (message.content == "?") {
+        return;
+    }
+    else if (message.content == message.content.toUpperCase()) {
            message.reply("Calmos Ramos");
     }
     for (let pas=0;pas<textArray3.length;pas++)
