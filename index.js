@@ -39,6 +39,11 @@ var textArray3=[
     "Fuck"
 ];
 
+var textArray4=[
+    "Charles",
+    "charles"
+];
+
 
 Client.login(process.env.token);
 Client.on("ready", () => {
@@ -57,5 +62,11 @@ Client.on("messageCreate",message => {
     for (let pas=0;pas<textArray3.length;pas++)
         if (message.content.includes(textArray3[pas])) {
             message.reply(repliesLanguage[Math.floor(Math.random()*repliesLanguage.length)]);
+
+    if (message.content.includes(textArray4)) {
+        message.reply("https://tenor.com/view/our-god-is-an-awesome-god-avery-bailee-madison-a-week-away-our-god-is-great-god-gif-21138190");
+                
+    }
+
  }
 });
