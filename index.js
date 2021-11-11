@@ -63,8 +63,9 @@ Client.on("messageCreate",message => {
         if (message.content.includes(textArray3[pas])) {
             message.reply(repliesLanguage[Math.floor(Math.random()*repliesLanguage.length)]);
 
-    if (message.content.includes(textArray4)) {
-        message.reply("https://tenor.com/view/our-god-is-an-awesome-god-avery-bailee-madison-a-week-away-our-god-is-great-god-gif-21138190");
+    for (let pas=0;pas<textArray4.length;pas++)
+        if (message.content.includes(textArray4[pas])) {
+            message.reply("https://tenor.com/view/our-god-is-an-awesome-god-avery-bailee-madison-a-week-away-our-god-is-great-god-gif-21138190");
                 
     }
 
