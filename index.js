@@ -60,7 +60,7 @@ Client.on("messageCreate",message => {
         if (message.content.includes(textArray4[pas])) {
             message.reply("feur");
 
-
+    }
     for (let pas=0;pas<textArray2.length;pas++)
         if (message.content.includes(textArray2[pas])) {
             message.reply(repliesDrinking[Math.floor(Math.random()*repliesDrinking.length)]);
