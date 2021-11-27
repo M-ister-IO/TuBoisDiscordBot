@@ -72,5 +72,7 @@ Client.on("messageCreate",message => {
             message.reply(repliesLanguage[Math.floor(Math.random()*repliesLanguage.length)]);
     }
 
- 
+    if (Math.floor(Math.random() * 100)==69){
+        message.reply("Deez Nuts");
+    }
 });
