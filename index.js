@@ -56,21 +56,14 @@ Client.on("ready", () => {
 
 Client.on("messageCreate",message => {
 
-    for (let pas=0;pas<textArray4.length;pas++)
-        if (message.content.includes(textArray4[pas])) {
-            message.reply("feur");
 
-    }
+    
     for (let pas=0;pas<textArray2.length;pas++)
         if (message.content.includes(textArray2[pas])) {
             message.reply(repliesDrinking[Math.floor(Math.random()*repliesDrinking.length)]);
             
     }
 
-    for (let pas=0;pas<textArray3.length;pas++)
-        if (message.content.includes(textArray3[pas])) {
-            message.reply(repliesLanguage[Math.floor(Math.random()*repliesLanguage.length)]);
-    }
 
     if (Math.floor(Math.random() * 100)==69){
         message.reply("Deez Nuts");
